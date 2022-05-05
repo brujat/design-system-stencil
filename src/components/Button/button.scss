@@ -1,0 +1,26 @@
+@import "../../scss/variables.scss";
+
+.primary, .secondary {
+    padding: 16px 32px;
+    cursor: pointer;
+    border-radius: 64px;
+    border: none;
+}
+
+.primary {
+  background-color: $color-brand-primary;
+  color: $color-system-white;
+
+  &:hover {
+    background-color: $color-brand-primary100;
+  }
+}
+
+.secondary {
+    background-color: $color-brand-secondary;
+    color: $color-system-black;
+  
+    &:hover {
+      background-color: $color-brand-secondary200;
+    }
+  }
