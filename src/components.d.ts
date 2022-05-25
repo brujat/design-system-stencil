@@ -7,7 +7,7 @@
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
     interface WcButton {
-        "eventHandler": () => void;
+        "eventHandler": (ev: any) => void;
         "label": string;
         "variant": 'primary' | 'secondary';
     }
@@ -25,7 +25,7 @@ declare global {
 }
 declare namespace LocalJSX {
     interface WcButton {
-        "eventHandler"?: () => void;
+        "eventHandler"?: (ev: any) => void;
         "label"?: string;
         "variant"?: 'primary' | 'secondary';
     }
