@@ -7,8 +7,17 @@
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
     interface WcButton {
+        /**
+          * @property {function} - Button event handler
+         */
         "eventHandler": (ev: any) => void;
+        /**
+          * @property {string} - label for the button
+         */
         "label": string;
+        /**
+          * @property {string} - Button variant type
+         */
         "variant": 'primary' | 'secondary';
     }
 }
@@ -25,8 +34,17 @@ declare global {
 }
 declare namespace LocalJSX {
     interface WcButton {
+        /**
+          * @property {function} - Button event handler
+         */
         "eventHandler"?: (ev: any) => void;
+        /**
+          * @property {string} - label for the button
+         */
         "label"?: string;
+        /**
+          * @property {string} - Button variant type
+         */
         "variant"?: 'primary' | 'secondary';
     }
     interface IntrinsicElements {

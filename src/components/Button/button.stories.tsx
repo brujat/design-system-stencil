@@ -1,17 +1,21 @@
 
-import {Button} from "./button";
-
 
 export default {
-  title: 'Button',
-  component: Button
+  title: 'Components/Button'
 };
 
-const Template = (args) => `<my-component variant="${args.variant}">${args.label}</my-component>`;
+const Template = (args) => `<wc-button label="${args.label}" variant="${args.variant}" />`;
 
 export const Primary = Template.bind({});
-
 Primary.args = {
-    variant: "primary",
-    label: "Primary Button"
-}
+  label: 'Click Here',
+  variant: 'primary'
+};
+
+export const Secondary = Template.bind({});
+Secondary.args = {
+  label: 'Click Here',
+  variant: 'secondary'
+};
+
+

@@ -1,6 +1,8 @@
 dist/
 www/
 loader/
+coverage/
+storybook-static/
 
 *~
 *.sw[mnpcod]
