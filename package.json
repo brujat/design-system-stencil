@@ -25,25 +25,28 @@
     "test.watch": "stencil test --spec --watchAll",
     "generate": "stencil generate",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "lint": "eslint src/**/*{.ts,.tsx}"
   },
   "dependencies": {
     "@stencil/core": "^2.13.0"
   },
   "devDependencies": {
     "@babel/core": "^7.17.9",
+    "@stencil/eslint-plugin": "^0.4.0",
     "@stencil/sass": "^1.5.2",
     "@storybook/addon-actions": "^6.4.21",
     "@storybook/addon-essentials": "^6.4.21",
     "@storybook/addon-links": "^6.4.21",
-    "@storybook/html": "^6.4.21",
-    "@storybook/react": "^6.4.21",
-    "@storybook/web-components": "^6.4.21",
+    "@storybook/html": "^6.1.21",
+    "@storybook/react": "^6.1.21",
+    "@storybook/web-components": "^6.1.21",
     "@types/jest": "^27.0.3",
     "babel-loader": "^8.2.4",
+    "eslint": "^8.16.0",
     "jest": "^27.4.5",
     "jest-cli": "^27.4.5",
-    "puppeteer": "^10.0.0"
+    "puppeteer": "^14.1.1"
   },
   "license": "MIT"
 }
