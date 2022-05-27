@@ -44,7 +44,6 @@
     "@storybook/web-components": "^6.5.5",
     "@types/jest": "^27.0.3",
     "babel-loader": "^8.2.4",
-    "eslint": "^8.16.0",
     "jest": "^27.4.5",
     "jest-cli": "^27.4.5",
     "puppeteer": "^14.1.1"
